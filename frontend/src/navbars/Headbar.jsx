@@ -33,7 +33,7 @@ const Headbar = () => {
           <Nav>
             <Button as={Link} to="/register" variant={location.pathname === '/register' ? 'light' : 'outline-light'} className="me-2">Register</Button>
             <Button as={Link} to="/login" variant={location.pathname === '/login' ? 'light' : 'outline-light'}>Login</Button>
-            <Button as={Link} to="/adminlogin" variant={location.pathname === '/adminlogin' ? 'light' : 'outline-light'}>Admin</Button>
+            <Button as={Link} to="/adminlogin" variant={location.pathname === '/adminlogin' ? 'light' : 'outline-light'} style={{ marginLeft: '7px' }}>Admin</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

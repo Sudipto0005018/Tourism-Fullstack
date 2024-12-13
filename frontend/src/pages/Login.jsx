@@ -142,7 +142,8 @@ const Login = () => {
           </button>
         </form>
 
-        <p className="fontstyle">
+        {/* <p className="fontstyle"> */}
+        <p>
           Don't have an account?{" "}
           <span className="text-success cursor" onClick={registerhandler}>
             Sign up

@@ -150,7 +150,8 @@ const Register = () => {
           </button>
         </form>
 
-        <p className="fontstyle">
+        {/* <p className="fontstyle"> */}
+        <p>
           Already have an account?{" "}
           <span className="text-success cursor" onClick={loginhandler}>
             Sign in
