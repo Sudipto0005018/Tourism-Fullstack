@@ -1,0 +1,180 @@
+
+.home {
+    font-family: Arial, sans-serif;
+}
+
+.home-header {
+    background-color: #f8f9fa;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    min-width: 100vw;
+    /* width: 100vw; */
+}
+
+.home-carousel img {
+    height: 620px;
+    object-fit: fill;
+}
+
+.home-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.explore-button {
+    margin-top: 20px;
+}
+
+.home-services,
+.home-testimonials {
+    padding: 50px 0;
+    text-align: center;
+    min-width: 100vw !important;
+}
+
+.home-services h2,
+.home-testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.home-services p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.home-services .card,
+.home-testimonials .card {
+    margin-bottom: 30px;
+}
+
+.home-testimonials .card-body {
+    font-size: 1.1em;
+}
+
+.additional-services {
+    margin-top: 50px;
+    padding: 0 15px; 
+}
+
+.additional-services .row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.service-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+    max-width: 275px;
+}
+
+.service-photo {
+    height: 150px; 
+    object-fit: fill;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.service-card h4 {
+    margin-top: 5px;
+    font-size: 1.2em; 
+}
+
+.service-card p {
+    font-size: 0.9em;
+}
+
+
+
+.service-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-icon .icon {
+    font-size: 3em;
+    color: #343a40; 
+    margin-bottom: 10px;
+}
+
+.service-icon h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.service-icon p {
+    font-size: 0.9em;
+}
+
+@media (max-width: 1230px) {
+    .home-services .card {
+        margin-bottom: 20px;
+    }
+
+    .home-services .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-services .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .home-testimonials .card {
+        margin-bottom: 20px;
+    }
+
+    .home-testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-testimonials .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .additional-services .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .service-card {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 410px) {
+    .home {
+        padding-left: 70px;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .home-services, .home-testimonials {
+        padding-right: 180px;
+    }
+}
+
+@media (min-width: 565px) and (max-width: 765px) {
+    .home-services, .home-testimonials {
+        padding-left: 100px;
+    }
+} 
+
+.home-testimonials {
+    margin-top: -30px;
+}
