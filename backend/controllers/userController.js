@@ -38,7 +38,7 @@ class user {
                 res.status(201).json({ message: 'password does not match' })
             }
 
-            let token = jwt.sign({ id: matchmail._id }, process.env.SECRET_KEY, { expiresIn: '1d' });
+            let token = jwt.sign({ id: matchmail._id }, process.env.SECRET_KEY, { expiresIn: '7d' });
 
             res.status(201).json({ message: 'user login successful', token })
         }

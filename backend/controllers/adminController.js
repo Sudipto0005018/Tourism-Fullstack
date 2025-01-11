@@ -46,7 +46,7 @@ class admin {
             }
     
             // Generate JWT token
-            const token = jwt.sign({ id: mailexist.id }, process.env.SECRET_KEY, { expiresIn: "1d" });
+            const token = jwt.sign({ id: mailexist.id }, process.env.SECRET_KEY, { expiresIn: "7d" });
     
             res.status(200).json({ message: "Admin login successful", token });
         } catch (error) {

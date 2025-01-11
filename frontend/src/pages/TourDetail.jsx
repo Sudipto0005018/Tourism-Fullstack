@@ -126,7 +126,7 @@ export const TourDetail = () => {
             className={`add-to-cart ${submitted ? "remove-from-cart" : ""}`}
             onClick={clickHandler}
           >
-            {submitted ? "Already added to cart" : (
+            {submitted ? "Already added to Cart" : (
               <>
                 Add to Cart <FontAwesomeIcon icon={faShoppingCart} />
               </>

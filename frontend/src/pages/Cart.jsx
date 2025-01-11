@@ -6,6 +6,8 @@ import emptyCartImage from "../assets/empty-cart.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
+import {toast} from "react-toastify";
+
 
 export const Cart = () => {
     const navigate = useNavigate();
@@ -43,6 +45,7 @@ export const Cart = () => {
                 Authorization: `Bearer ${token}`
             }
         });
+        toast.error("Tour removed from cart");
         console.log("clearcart response : ", response);
         getcart();
     };
