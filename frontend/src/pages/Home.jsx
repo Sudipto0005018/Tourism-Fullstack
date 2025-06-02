@@ -1,6 +1,6 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import germany from "../assets/germany.jpeg";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import germany from "../assets/germany2.jpeg";
 
 export const Home = () => {
   let navigate = useNavigate();
@@ -9,21 +9,21 @@ export const Home = () => {
     navigate("/tours");
   }
 
-// <img src='https://img.freepik.com/free-photo/neuschwanstein-castle-germany_395237-205.jpg?t=st=1734056745~exp=1734060345~hmac=204e901494c6c4cd8a852dd442b07d739a08eb6d5c41cc63ac8e91d11eeadeb6&w=996' className='w-100 h-100' />
+  // <img src='https://img.freepik.com/free-photo/neuschwanstein-castle-germany_395237-205.jpg?t=st=1734056745~exp=1734060345~hmac=204e901494c6c4cd8a852dd442b07d739a08eb6d5c41cc63ac8e91d11eeadeb6&w=996' className='w-100 h-100' />
 
-return (
-  <div className='bg-dark position-relative home-container'>
-    <img src={germany} className='w-100 h-100'/>
-    <button className='bg-danger explore-button position-absolute home-button' style={{color: "#FFF125"}} onClick={clickHandler}>Explore Tours</button>
-  </div>
-)
-}
-
-
-
-
-
-
+  return (
+    <div className="bg-dark position-relative home-container">
+      <img src={germany} className="w-100 h-100" />
+      <button
+        className="bg-danger explore-button position-absolute home-button"
+        style={{ color: "#FFF125" }}
+        onClick={clickHandler}
+      >
+        Explore Tours
+      </button>
+    </div>
+  );
+};
 
 // import React from "react";
 // import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
@@ -152,7 +152,6 @@ return (
 //           <h2 style={{ marginTop: "60px" }}>Key Features</h2>
 //           <p>Discover the perfect getaway where majestic mountains, pristine beaches, iconic landmarks, and seamless transport come together for an unforgettable adventure.</p>
 
-
 //           <Row className="additional-services">
 //             <Col md={3}>
 //               <div className="service-icon">
@@ -254,6 +253,3 @@ return (
 //     </div>
 //   );
 // };
-
-
-
